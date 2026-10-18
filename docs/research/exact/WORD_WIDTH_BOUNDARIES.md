@@ -34,7 +34,8 @@ The old native library passes the positive-pitch control. Its negative-source
 control runs only in an isolated child, with core files disabled and a time
 bound. Before entry it verifies that the predicted erroneous second-row address
 is unmapped; the child then terminates with SIGSEGV. The corrected library
-passes that same geometry. This is a controlled typed surface boundary;
+passes that same geometry. The fault location is inferred: no actual fault
+instruction or address was captured. This is a controlled typed surface boundary;
 physical DirectDraw driver availability of negative pitches is not established.
 The claim remains bounded by valid backing, signed representable displacement
 and coordinate products, finite geometry and eventual lock success.
