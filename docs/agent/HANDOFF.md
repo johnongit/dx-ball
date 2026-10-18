@@ -241,16 +241,25 @@ No new game acceptance is claimed for the current image. Ports remain deferred.
 Use `scripts/repo-python`, bounded LeanToken source reads, one allowed CPU and
 one writable compiler/provider/Wine session. `session_lock()` is non-reentrant;
 do not wrap a helper that already acquires it. CMake uses `--parallel 1`.
-Heavy commands run in a user scope:
+REA commands run in a user scope:
 
 ```bash
 systemd-run --user --scope --quiet \
-  -p CPUQuota=35% -p MemoryHigh=384M -p MemoryMax=512M \
-  scripts/repo-python <focused-command>
+  -p CPUQuota=35% -p MemoryHigh=1G -p MemoryMax=2G \
+  scripts/rea session path/to/requests.json
 ```
 
-REA's general Java heap cap is256MiB; the saved Mac project queries use128MiB
-and Node192MiB. Do not overlap heavy trees. Automated audio uses
+Compiler/Wine commands and standalone passive readers retain the 384/512MiB
+scope. The user approved the larger REA memory budget on October 18 after
+the 384/512MiB scope repeatedly pressured REA startup despite available host RAM.
+Earlier receipts retain their original limits. CPU affinity, quota and serial
+execution remain unchanged. One native query of `0x405120` completes and saves
+its snapshot in130.134s, with peak1,074,053,120 bytes,492 soft-high events and
+zero max/OOM events. Reuse `.analysis/rea/memory-budget-20261018/` and its
+seven-member verified archive; [REA commands](REA.md) records its Evidence ID
+and comparison with the previous failed startup. No match count changes.
+REA's Java heap cap is256MiB; the saved Mac project queries use128MiB and
+Node192MiB. Do not overlap heavy trees. Automated audio uses
 `PULSE_SINK=dxball_reconstruction_silent`; never change the default sink.
 
 For a genuine new source model, verify the relevant target/toolchain, freeze

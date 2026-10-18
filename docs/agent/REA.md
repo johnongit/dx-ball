@@ -70,8 +70,8 @@ selects the attested `c1.exe` through `vc4-c-frontend` and saves its own
 `.analysis/rea/vc4-c-frontend/` run/snapshot. Twelve dispatcher and nine
 provider-free lifecycle cases pass. One fresh import with the two optional
 analyzers below disabled retains57 observations and closes normally; the first
-query's retained wrapper timing is260,506ms. It fits the current CPU35%, memory384/512MiB limits with
-the256MiB heap: peak403,206,144 bytes,5200 soft-high reclaim events, no hard-max
+query's retained wrapper timing is260,506ms. It used the then-current CPU35%,
+memory384/512MiB limits with the256MiB heap: peak403,206,144 bytes,5200 soft-high reclaim events, no hard-max
 or OOM events. Actual C1 getter and low24 writer locations are now retained;
 runtime editor-symbol and emitted-record correspondence remains open. Reuse
 this closed evidence rather than repeating an import to rediscover those sites.
@@ -190,26 +190,45 @@ and released about 97 MiB of expanded tool storage. The current runtime and
 standard-bootstrap `npm ci` product remain fully hash-attested.
 
 The project REA entry point now sets the supported `GHIDRA_HEADLESS_MAXMEM=256M`.
-On this development host, cap a heavy command and all descendants with a user
-systemd scope, in addition to the existing one-CPU affinity and serial session:
+On October 18, the user approved `MemoryHigh=1G` and `MemoryMax=2G` for REA
+sessions, replacing the prior 384/512 MiB scope. The 35% CPU quota, one-CPU
+affinity, serial session and 256 MiB Java heap remain unchanged. On this host,
+cap each REA command and all descendants with a user systemd scope:
 
 ```bash
 systemd-run --user --scope --quiet \
-  -p CPUQuota=35% -p MemoryHigh=384M -p MemoryMax=512M \
+  -p CPUQuota=35% -p MemoryHigh=1G -p MemoryMax=2G \
   scripts/rea session path/to/requests.json
 ```
 
-Use the same scope for compiler/Wine commands. The kernel reports
-`cpu.max` as `35000 100000`, `memory.high` as `402653184`, and `memory.max` as
-`536870912`; these are whole-tree limits, not just launch-process settings.
-These tighter defaults also apply to passive readers. Prefer the retained
-Evidence and traces: the historical cold-import peaks above used the older
-640/768 MiB scope and do not establish operation within the new limit.
+The corresponding kernel settings are `cpu.max=35000 100000`,
+`memory.high=1073741824`, and `memory.max=2147483648`; these are whole-tree
+limits, not just launch-process settings. Compiler/Wine commands and standalone
+passive readers retain `MemoryHigh=384M` and `MemoryMax=512M`.
+Prefer retained Evidence and traces. The earlier 384/512 MiB and 640/768 MiB
+measurements above remain historical records of their original scopes.
 Do not run heavy sessions together.
 The historical general helper still records its earlier 512 MiB profile;
 the current REA wrapper explicitly selects the smaller heap. Node 22.19.0,
 Ghidra 12.1.4 and the existing JDK remain pinned. Keep discovery bounded and
 save full catalogs outside the conversation before inspecting selected schemas.
+
+One controlled native CLI query of `0x405120` verifies the larger budget on
+October 18. With the same pinned inputs, default analysis, one CPU, 35% quota
+and 256 MiB Java heap, it completes in 130.134 seconds and saves a one-record
+snapshot. No additional Node heap override is used. The whole tree peaks at
+1,074,053,120 bytes, with 492 soft-high events and zero max/OOM events. The
+previous 384/512 MiB CLI attempt timed out at provider startup (355.420 seconds
+overall, 347,139 soft-high events). This establishes a successful native query
+under the new budget, not readiness of every analysis profile.
+
+The returned original-target dossier is
+`ev_69852d0b19513ed3d5e28004185b6253d8b407fbaf66d3b564653fcf40a8af8b`.
+Its noncontiguous Ghidra body still owns 1,635 bytes within the established
+1,705-byte whole-function span; the existing extent reconciliation remains
+necessary. The full response, snapshot and resource receipts are retained in
+`.analysis/rea/memory-budget-20261018/` and its seven-member verified archive
+`.analysis/rea/memory-budget-20261018.tar.gz`. No source or exact claim changes.
 
 Input attestation hashes files through `hashlib.file_digest` rather than loading
 each whole file. The October 18 verification preserves all VC4, Node dependency

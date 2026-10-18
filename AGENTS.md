@@ -36,9 +36,11 @@ against instructions, exits and embedded data.
 - Use one writable compiler/provider session, one allowed CPU, CMake
   `--parallel 1`, and the 256 MiB Ghidra heap through the REA entry point.
   On this host, wrap compiler/provider/Wine commands in a user systemd scope
-  with `CPUQuota=35%`, `MemoryHigh=384M` and `MemoryMax=512M`. This caps the
-  whole process tree; do not overlap heavy tasks. Prefer retained evidence over
-  another cold provider import. See `docs/agent/REA.md`.
+  with `CPUQuota=35%`. For REA sessions, use the user-approved October 18 budget:
+  `MemoryHigh=1G` and `MemoryMax=2G`, replacing the prior 384/512 MiB limits.
+  Compiler/Wine commands retain `MemoryHigh=384M` and `MemoryMax=512M`.
+  These limits cap the whole process tree; do not overlap heavy tasks. Prefer
+  retained evidence over another cold provider import. See `docs/agent/REA.md`.
   Route automated game/audio probes to `PULSE_SINK=dxball_reconstruction_silent`.
 - Keep originals in `original/`, tools in `.tools/`, products in `build/`,
   raw evidence in `.analysis/`, and databases in `ghidra-project/`; these are private.
