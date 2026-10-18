@@ -1,5 +1,59 @@
 # Real game through the restored CRT entry
 
+## Fresh reconstruction build, October 18
+
+The maintained `build-legacy.py --restored-crt` command now succeeds in the fresh
+workspace. It compiles 109 missing objects and reuses nine independently verified
+canonical objects. The link uses 115 source objects, three integration objects,
+the 19 approved original members and one resource object, with `/NODEFAULTLIB`.
+No source or compiler recipe changes. The resulting 166,400-byte executable is
+`build/vc40-restored-crt/dxball.exe`, SHA-256
+`682cfc7fdf288b185bd4d5880b0d6790dc489eb4cfb9ea390166ad79a2bcb4e8`.
+This is a new locally present delivery, not a byte-for-byte comparison with the
+historical 40f92f0f image, whose binary is unavailable in this workspace.
+
+Complete original-address comparisons cover 457 configured units: 353 newly
+compiled bodies are compared, and 104 unchanged bodies are reconciled to sealed
+prior reports without repeating their comparisons. All 386 accepted exacts and 71
+candidates in that scope retain their status; there are no comparison errors or
+profile differences. All 270 classified authored functions are included: 250
+exact and 20 nonexact. The 18 excluded units are runtime-only standalone owners;
+their original-carrier input provenance or unused-u64 status is recorded without
+assuming every carrier section survives `/OPT:REF`. Global 395 exact/80 candidate
+claims remain unchanged; this does not recheck all 395 global exacts.
+
+The final-link check uses actual owner-qualified MAP/COFF definitions and named
+PE imports, rather than original function addresses as new-link destinations.
+It verifies 578 complete sections, 3,723 bindings, 5,544 independently resolved
+relocation fields and 109 common zero allocations. All 4,488 HIGHLOW entries are
+parsed; 4,090 have independent field ownership, while 398 remain unbound. There
+are 407 unlocated sections and 59 sections with unresolved destinations. These
+limits remain explicit; this is not complete PE-byte or loader-execution proof.
+Six exception-list fields correctly have no HIGHLOW entry: their external
+reference resolves to the approved member's actual ABS definition at zero.
+The actual entry, declared dependency closure, import/IAT associations and both
+ordinal resource payloads pass. No CRT DLL is imported.
+
+The isolated `build/runtime/vc40-restored-crt/` directory contains the new EXE
+and 48 verified data-file copies. All 49 originals remain unchanged. No game
+process runs: this private Wine environment lacks `xdotool`, ImageMagick capture
+commands, 32-bit audio libraries and the required named silent sink. A later
+focused startup check needs those prerequisites and a short original control
+before interpreting a reconstruction failure. Full behavior validation and the
+20 remaining authored byte mismatches stay open.
+
+Private `.analysis/fresh-restored-build-20261018/` retains the build/cache
+provenance, full comparisons, coverage review, scoped final-link proof and
+startup-readiness record. The compiler scope takes 199.401 seconds on CPU 0/35%,
+peaks at 165,543,936 bytes under 384/512 MiB, and records no high/max/OOM events.
+The final check's raw process `ru_maxrss` counter is not a measured cgroup peak.
+Current products and useful caches are retained; no new exact or semantic
+acceptance is claimed. All 38 closed evidence members are size/hash verified
+before removing the two unused librarian export byproducts. The current EXE,
+objects, dependency members, import libraries and prepared runtime remain.
+
+## Previous integration checkpoints
+
 The optional `vc40-restored-crt` build now starts the actual game through the
 recovered CRT. A small Windows entry adapter installs the real API bindings,
 then calls the unchanged `dxball_crt_startup`. It creates no second heap and

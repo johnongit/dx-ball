@@ -121,6 +121,13 @@ resource requirements and resume procedure.
 
 ## Authored candidates
 
+The [fresh restored-CRT rebuild](../RESTORED_CRT_GAME_ENTRY.md#fresh-reconstruction-build-october-18)
+covers all 270 authored functions using 353 new whole comparisons and 104 retained
+results across the broader delivery scope. All 250 authored exacts and the 20
+candidate results below survive. No authored function is excluded, no source
+changes and no new exact is claimed. The global inventory's 18 unselected units
+are runtime-only; this is not a fresh 395-exact global replay or game run.
+
 The [last-brick transition review](LAST_BRICK_TRANSITION_BOUNDARY.md) re-establishes
 nine original spans and shows that the count-one caller gate does not guarantee
 an eligible tile after a level-skip bonus replaces the board. Three bounded
@@ -237,7 +244,7 @@ frames do not by themselves justify changing any of these function bodies.
 | `measure-text` | `0x00404FD0` | 279 | 279 | 3 | Original outer-loop comparison context |
 | `animate-palette` | `0x0040A970` | 234 | 234 | 3 | Original remaining signed-guard producer |
 | `present-regions-now` | `0x00409100` | 984 | 984 | 6 | Left/right/bottom index-load scheduling context |
-| `wait-frames` | `0x00409610` | 170 | 170 | 8 | Remaining clock/comparison and local-home producers |
+| `wait-frames` | `0x00409610` | 170 | 170 | 8 | Original clock/comparison declaration context; all four frame homes already match |
 | `draw-line` | `0x00403070` | 445 | 445 | 9 | Comparison rank/context preserving the proven frame homes |
 | `reset-round` | `0x00415C40` | 426 | 426 | 20 | Remaining global-address and local-home producers |
 | `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 | Remaining local-home and address-producer ownership |

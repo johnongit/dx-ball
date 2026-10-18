@@ -22,8 +22,10 @@ completes the interrupted DirectSound queries and the DirectDraw follow-up:
 all177 register-relative sites now have native source-method/slot associations
 and reconstructed argument frames, without changing game source.
 The subsequent complete resource address-order control is rejected:three
-private gains lose four prior exacts. Continue authored recovery; no campaign
-is pending.
+private gains lose four prior exacts. A fresh restored-CRT build now produces
+a locally present 166,400-byte EXE and covers all 270 authored comparisons,
+preserving 250 exact/20 nonexact. No game process runs. Continue authored
+recovery; the short startup check has concrete environment prerequisites below.
 
 ## Current authorities
 
@@ -54,6 +56,8 @@ are separate claims, not interchangeable completion percentages.
 | `build/reports/exact-replay.json` | Last global 395 accepted comparisons and producers; historical private receipt |
 | `build/reports/last-brick-family-20261018.json` | New local 69-unit check: 62 exacts and seven unchanged candidates |
 | `build/reports/resource-family-20261018.json` | Local canonical 18-unit baseline: 13 exacts and five unchanged candidates; address-order proposal rejected |
+| `.analysis/fresh-restored-build-20261018/matching-comparison.json` | Fresh delivery objects: 353 new whole comparisons and 104 reconciled results; 386 exact/71 candidate units |
+| `.analysis/fresh-restored-build-20261018/coverage-review.json` | All 270 authored functions covered; 18 global runtime units excluded from this delivery comparison |
 | `.analysis/exact-candidate-audit-20261012/comparison.json` | Current 80 complete candidates; directory date is historical |
 | [Remaining-functions table](../research/exact/REMAINING_EXACT_FUNCTIONS.md) | All candidate results and owner-note links |
 | `.analysis/raster-muldiv-integration-20261018/authored-coverage.json` | Current authored source/comparison/closure coverage |
@@ -70,14 +74,19 @@ A source-only clone does not include the assets, tools, products or raw evidence
 
 ## Current source and delivery
 
-Last recorded delivery: `build/vc40-restored-crt/dxball.exe`, 166,400 bytes, SHA-256
-`40f92f0ff8b175c3ff4e38cba6760cce30081c25bc5b8300d1aaa2f2932d551f`.
+Current locally rebuilt delivery: `build/vc40-restored-crt/dxball.exe`, 166,400
+bytes, SHA-256 `682cfc7fdf288b185bd4d5880b0d6790dc489eb4cfb9ea390166ad79a2bcb4e8`.
+The [fresh build proof](../research/RESTORED_CRT_GAME_ENTRY.md#fresh-reconstruction-build-october-18)
+records 109 compiles/nine verified reuses and scoped static final-link checks.
+The historical 40f92f0f delivery is not locally available for a complete binary
+comparison; its earlier validation remains historical.
 The [genuine MulDiv integration](../research/exact/EXACT_FIXED_POINT.md#genuine-api-integration-october18)
 is the latest adopted source/API change. Its native/Windows/both VC4 builds,
 7,164 existing raster cases, complete linked containers and 4,488 loader fields
-pass within that checkpoint's scope. The restored link reuses 118 objects and
-19 approved original CRT members. Later private trials change no source,
-fixture, ledger, current object, or delivery identity.
+pass within that checkpoint's scope. That link reused 118 objects and 19 approved
+original CRT members. The fresh rebuild retains the same source and recipes,
+with its own new product identities; later private trials adopt no source or
+claim changes.
 
 Relevant accepted source contracts:
 
@@ -101,6 +110,20 @@ Relevant accepted source contracts:
   C linkage, real Win32 heap/raster defaults, and stdio-before-onexit ordering.
 
 ## Last closed work
+
+The fresh restored-CRT build completes without compiler/linker errors. Full
+original-address comparison covers all 270 authored functions and 187 other
+units, with no accepted regression or new promotion. Nine runtime owners/18
+units remain outside the delivery comparison; do not call this a new 395-unit
+global replay. Static final-link checks verify 578 complete sections and 4,090
+of 4,488 loader fields, retaining 398 unbound fields, 407 unlocated sections and 59
+sections with unresolved destinations. Private
+`.analysis/fresh-restored-build-20261018/` retains exact binding/coverage limits.
+The prepared runtime has 48 exact data copies; all 49 originals verify unchanged.
+No game runs: `xdotool`, ImageMagick capture commands, 32-bit audio libraries
+and `dxball_reconstruction_silent` are absent. Establish those prerequisites
+before a short original/rebuilt startup control; no full campaign is queued.
+Source, exact/semantic ledgers and progress counts stay unchanged.
 
 The [fixed resource address-order control](../research/exact/RESOURCE_ROTATION_WRAPPER_OWNER.md#fixed-address-order-resource-control-october-18)
 first recreates the locally absent canonical object:18 complete functions,
