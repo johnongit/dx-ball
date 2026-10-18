@@ -27,6 +27,16 @@ a locally present 166,400-byte EXE and covers all 270 authored comparisons,
 preserving 250 exact/20 nonexact. No game process runs. Continue authored
 recovery; the short startup check has concrete environment prerequisites below.
 
+The latest [raster arithmetic correction](../research/exact/RASTER_WORD_ARITHMETIC.md)
+changes three shared source bodies to preserve native 32-bit word operations.
+Six original/native additions and four polygon entry/cases pass, with two
+old-source UBSan failures confirming the corrected boundary defects. All twelve
+whole raster units are compared: nine exacts survive, triangle is now 1710/97,
+ordinary 1543/216 and clipped 1592/216. No new exact or source entry is claimed.
+Historical raster vectors are not rerun; the recorded compatibility chain refreshes
+input identities without adding cases. Private current comparison:
+`.analysis/raster-word-arithmetic-20261018/comparison.json`.
+
 ## Current authorities
 
 | Inventory | Current value |
@@ -81,12 +91,13 @@ records 109 compiles/nine verified reuses and scoped static final-link checks.
 The historical 40f92f0f delivery is not locally available for a complete binary
 comparison; its earlier validation remains historical.
 The [genuine MulDiv integration](../research/exact/EXACT_FIXED_POINT.md#genuine-api-integration-october18)
-is the latest adopted source/API change. Its native/Windows/both VC4 builds,
+precedes the latest raster word-arithmetic correction. Its native/Windows/both
+VC4 builds,
 7,164 existing raster cases, complete linked containers and 4,488 loader fields
 pass within that checkpoint's scope. That link reused 118 objects and 19 approved
-original CRT members. The fresh rebuild retains the same source and recipes,
-with its own new product identities; later private trials adopt no source or
-claim changes.
+original CRT members. The fresh rebuild retains that checkpoint's source and
+recipes with its own product identities. The later raster arithmetic checkpoint compiles its changed
+owner separately; the EXE above has not been relinked with those source changes.
 
 Relevant accepted source contracts:
 

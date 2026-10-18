@@ -1,6 +1,6 @@
 # Remaining exact functions
 
-Updated October 18, 2026, after the resumed COM dispatch reviews.
+Updated October 18, 2026, after the resumed COM reviews and raster arithmetic correction.
 Accepted totals are **395 functions / 85,106 code bytes / 244 metadata bytes**.
 There are **80 complete nonexact comparisons: 20 authored and 60 runtime**. None is an accepted exact.
 
@@ -11,6 +11,11 @@ the20 authored candidates and their comparison results below are unchanged.
 The [DirectDraw follow-up](DRAW_COM_DISPATCH.md) also joins128 sites and their
 argument frames, covering all177 register-relative calls from the earlier
 prefix audit. It does not promote any of the eleven call-bearing candidates.
+
+The [raster word-arithmetic correction](RASTER_WORD_ARITHMETIC.md) preserves
+nine exact functions and corrects three source bodies. All twelve units are
+compared whole; triangle and clipped producer changes update their results below.
+Ten focused original/native boundary cases pass; no exact count increases.
 
 These 80 are all currently source-present nonexact entries. The eight allocator
 functions now have complete exact comparisons, closing the three previous
@@ -249,12 +254,12 @@ frames do not by themselves justify changing any of these function bodies.
 | `reset-round` | `0x00415C40` | 426 | 426 | 20 | Remaining global-address and local-home producers |
 | `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 | Remaining local-home and address-producer ownership |
 | `draw-paddle` | `0x00412EC0` | 677 | 677 | 68 | Original sampled-width/local-home ownership |
-| `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 88 | Real edge/workspace declarations retaining proven EH states |
+| `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 97 | Real edge/workspace declarations retaining proven EH states |
 | `draw-sprite` | `0x00404180` | 105 | 107 | 94 | Original wrapper interface/address producers |
 | `find-hit-region` | `0x00401F90` | 173 | 172 | 132 | Original signed-comparison producer |
 | `blt-sprite` | `0x004040B0` | 195 | 199 | 173 | Original wrapper interface/address producers |
 | `fill-polygon` | `0x0040B550` | 1543 | 1543 | 216 | Workspace/edge declarations and lifetime scheduling |
-| `fill-polygon-clipped` | `0x0040BB60` | 1592 | 1592 | 213 | Workspace/edge declarations and clipping producers |
+| `fill-polygon-clipped` | `0x0040BB60` | 1592 | 1592 | 216 | Workspace/edge declarations and clipping producers |
 | `release-sprite` | `0x00404BE0` | 262 | 269 | 245 | Original surface-receiver/field/address context |
 | `draw-high-scores` | `0x00406B20` | 404 | 403 | 330 | Original shortened comparison producer |
 | `load-pcx` | `0x00409BB0` | 862 | 979 | 851 | Frame/workspace declaration supported by real consumers |

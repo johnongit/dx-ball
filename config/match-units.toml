@@ -2747,7 +2747,7 @@ symbol = "??KDxBallFixedPoint@@QAE?AV0@V0@@Z"
 target_address = 4240080
 size = 182
 relocations = [
-  { offset = 6, type = "DIR32", symbol = "$L1243", addend = 0, target = 4240235 },
+  { offset = 6, type = "DIR32", symbol = "$L1249", addend = 0, target = 4240235 },
   { offset = 12, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 20, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 51, type = "REL32", symbol = "??0DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239936 },
@@ -2755,17 +2755,17 @@ relocations = [
   { offset = 132, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
   { offset = 141, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
   { offset = 150, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
-  { offset = 156, type = "DIR32", symbol = "$T1250", addend = 0, target = 4326224 },
+  { offset = 156, type = "DIR32", symbol = "$T1256", addend = 0, target = 4326224 },
   { offset = 161, type = "REL32", symbol = "___CxxFrameHandler", addend = 0, target = 4294000 },
   { offset = 171, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 }
 ]
 build = "raster"
 data_comdats = [
-  { symbol = "$T1250", target_address = 4326224, size = 56, relocations = [
-  { offset = 8, type = "DIR32", symbol = "$T1251", addend = 0, target = 4326256 },
-  { offset = 36, type = "DIR32", symbol = "$L1248", addend = 0, target = 4240198 },
-  { offset = 44, type = "DIR32", symbol = "$L1244", addend = 0, target = 4240226 },
-  { offset = 52, type = "DIR32", symbol = "$L1245", addend = 0, target = 4240217 }
+  { symbol = "$T1256", target_address = 4326224, size = 56, relocations = [
+  { offset = 8, type = "DIR32", symbol = "$T1257", addend = 0, target = 4326256 },
+  { offset = 36, type = "DIR32", symbol = "$L1254", addend = 0, target = 4240198 },
+  { offset = 44, type = "DIR32", symbol = "$L1250", addend = 0, target = 4240226 },
+  { offset = 52, type = "DIR32", symbol = "$L1251", addend = 0, target = 4240217 }
 ] }
 ]
 
@@ -2783,19 +2783,19 @@ symbol = "??MDxBallFixedPoint@@QAEHV0@@Z"
 target_address = 4240320
 size = 129
 relocations = [
-  { offset = 6, type = "DIR32", symbol = "$L1254", addend = 0, target = 4240422 },
+  { offset = 6, type = "DIR32", symbol = "$L1260", addend = 0, target = 4240422 },
   { offset = 12, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 20, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 97, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
-  { offset = 103, type = "DIR32", symbol = "$T1259", addend = 0, target = 4326280 },
+  { offset = 103, type = "DIR32", symbol = "$T1265", addend = 0, target = 4326280 },
   { offset = 108, type = "REL32", symbol = "___CxxFrameHandler", addend = 0, target = 4294000 },
   { offset = 118, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 }
 ]
 build = "raster"
 data_comdats = [
-  { symbol = "$T1259", target_address = 4326280, size = 40, relocations = [
-  { offset = 8, type = "DIR32", symbol = "$T1260", addend = 0, target = 4326312 },
-  { offset = 36, type = "DIR32", symbol = "$L1255", addend = 0, target = 4240413 }
+  { symbol = "$T1265", target_address = 4326280, size = 40, relocations = [
+  { offset = 8, type = "DIR32", symbol = "$T1266", addend = 0, target = 4326312 },
+  { offset = 36, type = "DIR32", symbol = "$L1261", addend = 0, target = 4240413 }
 ] }
 ]
 
@@ -2804,19 +2804,19 @@ symbol = "??YDxBallFixedPoint@@QAEAAV0@V0@@Z"
 target_address = 4240464
 size = 110
 relocations = [
-  { offset = 6, type = "DIR32", symbol = "$L1263", addend = 0, target = 4240547 },
+  { offset = 6, type = "DIR32", symbol = "$L1269", addend = 0, target = 4240547 },
   { offset = 12, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 20, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 78, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
-  { offset = 84, type = "DIR32", symbol = "$T1266", addend = 0, target = 4326320 },
+  { offset = 84, type = "DIR32", symbol = "$T1272", addend = 0, target = 4326320 },
   { offset = 89, type = "REL32", symbol = "___CxxFrameHandler", addend = 0, target = 4294000 },
   { offset = 99, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 }
 ]
 build = "raster"
 data_comdats = [
-  { symbol = "$T1266", target_address = 4326320, size = 40, relocations = [
-  { offset = 8, type = "DIR32", symbol = "$T1267", addend = 0, target = 4326352 },
-  { offset = 36, type = "DIR32", symbol = "$L1264", addend = 0, target = 4240538 }
+  { symbol = "$T1272", target_address = 4326320, size = 40, relocations = [
+  { offset = 8, type = "DIR32", symbol = "$T1273", addend = 0, target = 4326352 },
+  { offset = 36, type = "DIR32", symbol = "$L1270", addend = 0, target = 4240538 }
 ] }
 ]
 
@@ -2825,7 +2825,7 @@ symbol = "_dxball_fill_triangle"
 target_address = 4238224
 size = 1710
 relocations = [
-  { offset = 6, type = "DIR32", symbol = "$L1219", addend = 0, target = 4239910 },
+  { offset = 6, type = "DIR32", symbol = "$L1225", addend = 0, target = 4239910 },
   { offset = 12, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 20, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 },
   { offset = 34, type = "REL32", symbol = "??0DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239936 },
@@ -2890,30 +2890,30 @@ relocations = [
   { offset = 1663, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
   { offset = 1672, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
   { offset = 1681, type = "REL32", symbol = "??1DxBallFixedPoint@@QAE@XZ", addend = 0, target = 4239968 },
-  { offset = 1687, type = "DIR32", symbol = "$T1239", addend = 0, target = 4326064 },
+  { offset = 1687, type = "DIR32", symbol = "$T1245", addend = 0, target = 4326064 },
   { offset = 1692, type = "REL32", symbol = "___CxxFrameHandler", addend = 0, target = 4294000 },
   { offset = 1701, type = "DIR32", symbol = "__except_list", addend = 0, target = 0 }
 ]
 build = "raster"
 data_comdats = [
-  { symbol = "$T1239", target_address = 4326064, size = 160, relocations = [
-  { offset = 8, type = "DIR32", symbol = "$T1241", addend = 0, target = 4326096 },
-  { offset = 36, type = "DIR32", symbol = "$L1220", addend = 0, target = 4239901 },
-  { offset = 44, type = "DIR32", symbol = "$L1221", addend = 0, target = 4239892 },
-  { offset = 52, type = "DIR32", symbol = "$L1222", addend = 0, target = 4239883 },
-  { offset = 60, type = "DIR32", symbol = "$L1223", addend = 0, target = 4239874 },
-  { offset = 68, type = "DIR32", symbol = "$L1225", addend = 0, target = 4239856 },
-  { offset = 76, type = "DIR32", symbol = "$L1224", addend = 0, target = 4239865 },
-  { offset = 84, type = "DIR32", symbol = "$L1226", addend = 0, target = 4239847 },
-  { offset = 92, type = "DIR32", symbol = "$L1227", addend = 0, target = 4239838 },
-  { offset = 100, type = "DIR32", symbol = "$L1229", addend = 0, target = 4239820 },
-  { offset = 108, type = "DIR32", symbol = "$L1228", addend = 0, target = 4239829 },
-  { offset = 116, type = "DIR32", symbol = "$L1230", addend = 0, target = 4239811 },
-  { offset = 124, type = "DIR32", symbol = "$L1231", addend = 0, target = 4239802 },
-  { offset = 132, type = "DIR32", symbol = "$L1233", addend = 0, target = 4239784 },
-  { offset = 140, type = "DIR32", symbol = "$L1232", addend = 0, target = 4239793 },
-  { offset = 148, type = "DIR32", symbol = "$L1234", addend = 0, target = 4239775 },
-  { offset = 156, type = "DIR32", symbol = "$L1235", addend = 0, target = 4239766 }
+  { symbol = "$T1245", target_address = 4326064, size = 160, relocations = [
+  { offset = 8, type = "DIR32", symbol = "$T1247", addend = 0, target = 4326096 },
+  { offset = 36, type = "DIR32", symbol = "$L1226", addend = 0, target = 4239901 },
+  { offset = 44, type = "DIR32", symbol = "$L1227", addend = 0, target = 4239892 },
+  { offset = 52, type = "DIR32", symbol = "$L1228", addend = 0, target = 4239883 },
+  { offset = 60, type = "DIR32", symbol = "$L1229", addend = 0, target = 4239874 },
+  { offset = 68, type = "DIR32", symbol = "$L1231", addend = 0, target = 4239856 },
+  { offset = 76, type = "DIR32", symbol = "$L1230", addend = 0, target = 4239865 },
+  { offset = 84, type = "DIR32", symbol = "$L1232", addend = 0, target = 4239847 },
+  { offset = 92, type = "DIR32", symbol = "$L1233", addend = 0, target = 4239838 },
+  { offset = 100, type = "DIR32", symbol = "$L1235", addend = 0, target = 4239820 },
+  { offset = 108, type = "DIR32", symbol = "$L1234", addend = 0, target = 4239829 },
+  { offset = 116, type = "DIR32", symbol = "$L1236", addend = 0, target = 4239811 },
+  { offset = 124, type = "DIR32", symbol = "$L1237", addend = 0, target = 4239802 },
+  { offset = 132, type = "DIR32", symbol = "$L1239", addend = 0, target = 4239784 },
+  { offset = 140, type = "DIR32", symbol = "$L1238", addend = 0, target = 4239793 },
+  { offset = 148, type = "DIR32", symbol = "$L1240", addend = 0, target = 4239775 },
+  { offset = 156, type = "DIR32", symbol = "$L1241", addend = 0, target = 4239766 }
 ] }
 ]
 

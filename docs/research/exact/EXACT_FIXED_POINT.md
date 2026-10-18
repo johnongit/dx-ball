@@ -1,5 +1,10 @@
 # Fixed-point class and triangle lifetime recovery
 
+The later [word-arithmetic correction](RASTER_WORD_ARITHMETIC.md) preserves the
+original wrapping accumulation and signed polygon error comparison. All nine
+raster exacts survive; current candidate results are 1710/97, 1543/216 and
+1592/216. Earlier byte results below are historical.
+
 October 16 [ownership follow-up](COMPILER_FRAGMENT_OWNERSHIP.md): the 24 old
 auto-analysis splits are now recorded as parent-owned compiler fragments,
 without independent source/exact claims. Complete parent extents and current

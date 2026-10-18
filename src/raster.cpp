@@ -134,7 +134,7 @@ void DXBALL_RASTER_CALL dxball_fill_polygon(DxBallByte *pixels, DxBallInt pitch,
             work.edge = work.active[work.i];
             work.edge->error += work.edge->dx;
             if (work.edge->dx < 0) {
-                while (work.edge->dy <= -work.edge->error) {
+                while (work.edge->dy <= (DxBallInt)(-(DxBallUInt)work.edge->error)) {
                     work.edge->error += work.edge->dy;
                     --work.edge->x;
                 }
@@ -244,7 +244,7 @@ void DXBALL_RASTER_CALL dxball_fill_polygon_clipped(DxBallByte *pixels, DxBallIn
             work.edge = work.active[work.i];
             work.edge->error += work.edge->dx;
             if (work.edge->dx < 0) {
-                while (work.edge->dy <= -work.edge->error) {
+                while (work.edge->dy <= (DxBallInt)(-(DxBallUInt)work.edge->error)) {
                     work.edge->error += work.edge->dy;
                     --work.edge->x;
                 }
@@ -380,7 +380,7 @@ DxBallInt DxBallFixedPoint::operator<(DxBallFixedPoint other) {
 }
 /* FUNCTION: DXBALL 0x0040B450 */
 DxBallFixedPoint &DxBallFixedPoint::operator+=(DxBallFixedPoint increment) {
-    value += increment.value;
+    reinterpret_cast<DxBallUInt &>(value) += (DxBallUInt)increment.value;
     return *this;
 }
 

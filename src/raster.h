@@ -15,7 +15,8 @@ extern "C" {
 DxBallInt dxball_fixed_divide(DxBallInt number, DxBallInt denominator);
 
 /* Coordinates, differences, fixed-point products, edge carries and pointer
-   arithmetic must be representable. Backing must cover the visited spans.
+   arithmetic must be representable. The negative-edge comparison negates its
+   error as a wrapping 32-bit word. Backing must cover the visited spans.
    Polygons require a positive count and a closed contour with nonhorizontal
    edges. Unclipped polygons require in-bounds coordinates; clipped routines
    use the original fixed 640-by-480 bounds, independent of supplied pitch. */
@@ -34,7 +35,8 @@ void dxball_fill_triangle(DxBallByte *pixels, DxBallInt pitch,
 
 /* A four-byte, nonvirtual signed 16.16 value. Default construction preserves
    the scalar; the nontrivial destructor gives temporaries their real lifetime.
-   Coordinate products, divisions and accumulated sums must be representable. */
+   Coordinate products and divisions must be representable. Addition wraps
+   as a 32-bit word, using the supported targets' two's-complement storage. */
 class DxBallFixedPoint {
 public:
     DxBallInt value;

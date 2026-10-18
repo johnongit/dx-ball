@@ -28,3 +28,7 @@ See [the architecture](ARCHITECTURE.md), [compiler matching](MATCHING.md),
 and [historical play observations](research/ORIGINAL_CAMPAIGN.md).
 
 Generated from the ledgers by `scripts/repo-python scripts/progress.py`.
+
+October 18 source recovery: [three raster arithmetic corrections](research/exact/RASTER_WORD_ARITHMETIC.md),
+ten focused original/native boundary comparisons, and all nine raster exacts
+preserved. Counts above do not increase; twenty authored functions remain nonexact.
