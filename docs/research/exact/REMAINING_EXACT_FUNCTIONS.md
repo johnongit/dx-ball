@@ -1,6 +1,6 @@
 # Remaining exact functions
 
-Updated October 18, 2026, after the paired palette declaration inference.
+Updated October 18, 2026, after the resumed last-brick transition review.
 Accepted totals are **395 functions / 85,106 code bytes / 244 metadata bytes**.
 There are **80 complete nonexact comparisons: 20 authored and 60 runtime**. None is an accepted exact.
 
@@ -113,6 +113,15 @@ resource requirements and resume procedure.
 
 ## Authored candidates
 
+The [last-brick transition review](LAST_BRICK_TRANSITION_BOUNDARY.md) re-establishes
+nine original spans and shows that the count-one caller gate does not guarantee
+an eligible tile after a level-skip bonus replaces the board. Three bounded
+original-only probes confirm the stale count; the queue body is never executed.
+Seven canonical owner compilations compare all 69 complete functions, preserving
+62 prior exacts and the seven candidate results listed in that note. There is
+no source or acceptance-count change. The other 13 authored candidates retain
+their preceding comparison authorities; they are not recompiled here.
+
 At the October18 handoff, the [bank filename qualifier control](MAC_CANDIDATE_FLOW_CONNECTIONS.md#bank-filename-qualification-and-path-boundary)
 closes after one resource compile: all18 complete raw/resolved bodies and13
 prior exacts remain unchanged; full COFF differences are timestamps only.
@@ -210,28 +219,28 @@ restores all19 frame accesses to their original homes and improves416→405.
 One owner compile preserves five exact companions and six other body identities;
 108 existing cases pass. Independent ownership subsequently restores that receiver and the full1,315-byte function is exact.
 
-| Function | Original bytes | Current bytes | Differing positions |
-| --- | ---: | ---: | ---: |
-| `elapsed` | 81 | 81 | 3 |
-| `measure-text` | 279 | 279 | 3 |
-| `animate-palette` | 234 | 234 | 3 |
-| `present-regions-now` | 984 | 984 | 6 |
-| `wait-frames` | 170 | 170 | 8 |
-| `draw-line` | 445 | 445 | 9 |
-| `reset-round` | 426 | 426 | 20 |
-| `load-sprite-bank` | 1475 | 1475 | 64 |
-| `draw-paddle` | 677 | 677 | 68 |
-| `fill-triangle` | 1710 | 1710 | 88 |
-| `draw-sprite` | 105 | 107 | 94 |
-| `find-hit-region` | 173 | 172 | 132 |
-| `blt-sprite` | 195 | 199 | 173 |
-| `fill-polygon` | 1543 | 1543 | 216 |
-| `fill-polygon-clipped` | 1592 | 1592 | 213 |
-| `release-sprite` | 262 | 269 | 245 |
-| `draw-high-scores` | 404 | 403 | 330 |
-| `load-pcx` | 862 | 979 | 851 |
-| `last-brick` | 1057 | 1061 | 992 |
-| `render-rotated-sprite` | 1572 | 1458 | 1466 |
+| Function | Address | Original bytes | Current bytes | Differing positions |
+| --- | --- | ---: | ---: | ---: |
+| `elapsed` | `0x004034F0` | 81 | 81 | 3 |
+| `measure-text` | `0x00404FD0` | 279 | 279 | 3 |
+| `animate-palette` | `0x0040A970` | 234 | 234 | 3 |
+| `present-regions-now` | `0x00409100` | 984 | 984 | 6 |
+| `wait-frames` | `0x00409610` | 170 | 170 | 8 |
+| `draw-line` | `0x00403070` | 445 | 445 | 9 |
+| `reset-round` | `0x00415C40` | 426 | 426 | 20 |
+| `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 |
+| `draw-paddle` | `0x00412EC0` | 677 | 677 | 68 |
+| `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 88 |
+| `draw-sprite` | `0x00404180` | 105 | 107 | 94 |
+| `find-hit-region` | `0x00401F90` | 173 | 172 | 132 |
+| `blt-sprite` | `0x004040B0` | 195 | 199 | 173 |
+| `fill-polygon` | `0x0040B550` | 1543 | 1543 | 216 |
+| `fill-polygon-clipped` | `0x0040BB60` | 1592 | 1592 | 213 |
+| `release-sprite` | `0x00404BE0` | 262 | 269 | 245 |
+| `draw-high-scores` | `0x00406B20` | 404 | 403 | 330 |
+| `load-pcx` | `0x00409BB0` | 862 | 979 | 851 |
+| `last-brick` | `0x00415F40` | 1057 | 1061 | 992 |
+| `render-rotated-sprite` | `0x004026A0` | 1572 | 1458 | 1466 |
 
 ## Runtime candidates
 

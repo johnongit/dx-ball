@@ -1,5 +1,14 @@
 # Lightning and frame drawing
 
+The [resumed transition-boundary review](exact/LAST_BRICK_TRANSITION_BOUNDARY.md)
+confirms original board replacement before the last-brick gate and recount
+after it. A stale count of one does not guarantee an eligible tile; three
+original-only probes stop at the explosion-call boundary, including unwritten
+coordinate reads for an empty replacement. The defined-storage expiry scope
+still requires an eligible tile. Source and all acceptance counts remain fixed;
+69 complete comparisons preserve 62 exacts and seven candidate results, including
+last-brick 1,061/1,057 bytes with 992 differences. The checkpoints below are historical.
+
 The latest [expiry-local scope](exact/LIGHTNING_EXPIRY_SCOPE.md) restores six
 original last-brick frame homes and reduces its complete differences992→990.
 Twelve exact companions/3303 bytes and the other nineteen code identities remain;

@@ -6,8 +6,7 @@ then verify the original VC4 build and playability; resume ports after that.
 The user permits the **19 explicit original CRT members** in the restored-CRT
 delivery. Removing them is not a delivery gate. Prioritize authored functions.
 
-Repository: `/home/pentester/coding/codex_ida/dx-ball-reconstruction/dx-ball`.
-The environment may start one directory above it. Read [AGENTS.md](../../AGENTS.md),
+Paths below are relative to the repository root. Read [AGENTS.md](../../AGENTS.md),
 [WORKFLOW.md](WORKFLOW.md) and the selected owner note before changing source.
 Keep code, tracked documentation and commits English. Keep the README focused on
 the reconstruction approach and REA, with its two centered 900px images.
@@ -18,9 +17,9 @@ retains the preceding adoption and cleanup chronology. Owner notes and private
 receipts remain authoritative within their stated scopes. Historical totals
 are not current totals.
 
-The user stopped exploration to prepare this handoff. No new restoration trial
-or campaign is pending. Resume source recovery only when requested; the
-reconstruction itself remains unfinished.
+The user resumed reconstruction on October 18. The latest bounded checkpoint
+below verifies a last-brick transition boundary without changing game source.
+Continue authored recovery; no campaign is pending.
 
 ## Current authorities
 
@@ -48,7 +47,8 @@ are separate claims, not interchangeable completion percentages.
 | `config/compiler-fragments.csv` | Retired aliases owned by complete C++ parents; not every internal block |
 | `config/implemented.csv`, `matches.csv`, `semantic-acceptance.csv` | Source, exact and scoped semantic claims |
 | `config/source-owners.toml`, `match-units.toml` | Source ownership; full compiler recipes, extents and bindings |
-| `build/reports/exact-replay.json` | Current 395 accepted comparisons and producers |
+| `build/reports/exact-replay.json` | Last global 395 accepted comparisons and producers; historical private receipt |
+| `build/reports/last-brick-family-20261018.json` | New local 69-unit check: 62 exacts and seven unchanged candidates |
 | `.analysis/exact-candidate-audit-20261012/comparison.json` | Current 80 complete candidates; directory date is historical |
 | [Remaining-functions table](../research/exact/REMAINING_EXACT_FUNCTIONS.md) | All candidate results and owner-note links |
 | `.analysis/raster-muldiv-integration-20261018/authored-coverage.json` | Current authored source/comparison/closure coverage |
@@ -65,7 +65,7 @@ A source-only clone does not include the assets, tools, products or raw evidence
 
 ## Current source and delivery
 
-Current delivery: `build/vc40-restored-crt/dxball.exe`, 166,400 bytes, SHA-256
+Last recorded delivery: `build/vc40-restored-crt/dxball.exe`, 166,400 bytes, SHA-256
 `40f92f0ff8b175c3ff4e38cba6760cce30081c25bc5b8300d1aaa2f2932d551f`.
 The [genuine MulDiv integration](../research/exact/EXACT_FIXED_POINT.md#genuine-api-integration-october18)
 is the latest adopted source/API change. Its native/Windows/both VC4 builds,
@@ -96,6 +96,42 @@ Relevant accepted source contracts:
   C linkage, real Win32 heap/raster defaults, and stdio-before-onexit ordering.
 
 ## Last closed work
+
+The [last-brick transition review](../research/exact/LAST_BRICK_TRANSITION_BOUNDARY.md)
+confirms that a level-skip bonus replaces the board before the last-brick gate,
+while the old remaining count and deadline survive until late restart. Therefore
+the count-one gate alone does not establish an eligible tile. Nine original
+spans/6,040 bytes reconcile through REA plus two excluded jumps and the complete
+19-word bonus table. Three original-only direct-call probes retain the stale
+count on zero/one/two-tile replacements; the empty expired scan reads unwritten
+coordinate slots. They stop before the explosion queue body. Preserve this
+original behavior; there is no full-frame reachability or crash claim.
+
+Seven unchanged owner compilations compare 69 complete units/1,914 bindings/56
+full literal references: all 62 prior exacts/23,228 bytes and seven candidate
+sizes/difference counts survive. The new focused report is
+`build/reports/last-brick-family-20261018.json`; private reviews and receipts are
+under `.analysis/last-brick-precondition-20261018/`. No source, exact or semantic
+acceptance count changes, native build, relink or campaign follows.
+
+This fresh checkout initially lacked historical `.analysis/`, `build/` and
+Ghidra projects. The older receipt/delivery identities elsewhere in this handoff
+remain historical authorities, not locally present products. Pinned Node 22.19.0
+is now in `.tools/node-22.19.0/bin`; a private Ubuntu Wine 9 compiler runtime is in
+`.tools/wine9-private/bin`. Prepend the relevant directory to PATH inside the
+required systemd scope. The original VC4 compiler/linker banners verify. Wine
+gameplay/audio support is untested. The new REA session completes all ten
+individual responses but exhausts Node heap during closing snapshot serialization;
+no snapshot is produced. Its scope exits, full responses are archived and
+member-hash verified, and no successful query is repeated.
+
+An independent source-only inventory under
+`.analysis/com-call-inventory-20261018/` identifies 177 COM call sites across 74
+catalogued functions: 128 DirectDraw-family and 49 DirectSound-family. This matches
+the unresolved indirect-call count numerically; original instruction-site
+correspondence is still unproved. A bounded next query is the sound-buffer
+factory at 4063A0, its load-sound caller 405A7B and device producer 405158/cell 421098.
+Do not infer a final authored denominator from the source-site count.
 
 The [bank filename and path review](../research/exact/MAC_CANDIDATE_FLOW_CONNECTIONS.md#bank-filename-qualification-and-path-boundary)
 reads one previously missing416-byte Mac helper through REA6.5 process capture
