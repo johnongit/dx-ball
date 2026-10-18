@@ -27,7 +27,7 @@ a locally present 166,400-byte EXE and covers all 270 authored comparisons,
 preserving 250 exact/20 nonexact. No game process runs. Continue authored
 recovery; the short startup check has concrete environment prerequisites below.
 
-The latest [raster arithmetic correction](../research/exact/RASTER_WORD_ARITHMETIC.md)
+The preceding [raster arithmetic correction](../research/exact/RASTER_WORD_ARITHMETIC.md)
 changes three shared source bodies to preserve native 32-bit word operations.
 Six original/native additions and four polygon entry/cases pass, with two
 old-source UBSan failures confirming the corrected boundary defects. All twelve
@@ -36,6 +36,16 @@ ordinary 1543/216 and clipped 1592/216. No new exact or source entry is claimed.
 Historical raster vectors are not rerun; the recorded compatibility chain refreshes
 input identities without adding cases. Private current comparison:
 `.analysis/raster-word-arithmetic-20261018/comparison.json`.
+
+The latest [word-width recovery](../research/exact/WORD_WIDTH_BOUNDARIES.md)
+corrects signed source-row displacement in rotation and modular text measurement.
+Four original/native signed-pitch pairs and five text-width cases pass, with
+isolated old-source failures confirming both defects. Twelve complete VC4 units
+retain every prior raw/resolved code identity, including ten exacts/1,796 bytes.
+Renderer remains 1458/1572 with 1,466 differences and measurement 279/279 with three.
+No exact/source count increases or full-game validation is claimed. Reuse
+`.analysis/word-width-recovery-20261018/comparison.json` and the scoped boundary
+proofs; do not repeat historical matrices.
 
 ## Current authorities
 
@@ -68,7 +78,7 @@ are separate claims, not interchangeable completion percentages.
 | `build/reports/resource-family-20261018.json` | Local canonical 18-unit baseline: 13 exacts and five unchanged candidates; address-order proposal rejected |
 | `.analysis/fresh-restored-build-20261018/matching-comparison.json` | Fresh delivery objects: 353 new whole comparisons and 104 reconciled results; 386 exact/71 candidate units |
 | `.analysis/fresh-restored-build-20261018/coverage-review.json` | All 270 authored functions covered; 18 global runtime units excluded from this delivery comparison |
-| `.analysis/exact-candidate-audit-20261012/comparison.json` | Current 80 complete candidates; directory date is historical |
+| `.analysis/exact-candidate-audit-20261012/comparison.json` | Historical 80-candidate base; later owner reports supersede changed results |
 | [Remaining-functions table](../research/exact/REMAINING_EXACT_FUNCTIONS.md) | All candidate results and owner-note links |
 | `.analysis/raster-muldiv-integration-20261018/authored-coverage.json` | Current authored source/comparison/closure coverage |
 
@@ -96,8 +106,8 @@ VC4 builds,
 7,164 existing raster cases, complete linked containers and 4,488 loader fields
 pass within that checkpoint's scope. That link reused 118 objects and 19 approved
 original CRT members. The fresh rebuild retains that checkpoint's source and
-recipes with its own product identities. The later raster arithmetic checkpoint compiles its changed
-owner separately; the EXE above has not been relinked with those source changes.
+recipes with its own product identities. The later arithmetic checkpoints compile their changed
+owners separately; the EXE above has not been relinked with those source changes.
 
 Relevant accepted source contracts:
 

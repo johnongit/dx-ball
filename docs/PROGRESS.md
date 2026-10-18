@@ -32,3 +32,7 @@ Generated from the ledgers by `scripts/repo-python scripts/progress.py`.
 October 18 source recovery: [three raster arithmetic corrections](research/exact/RASTER_WORD_ARITHMETIC.md),
 ten focused original/native boundary comparisons, and all nine raster exacts
 preserved. Counts above do not increase; twenty authored functions remain nonexact.
+
+Further October 18 recovery: [rotation displacement and text-width corrections](research/exact/WORD_WIDTH_BOUNDARIES.md)
+pass nine original/native boundary cases while preserving ten exact functions
+and all twelve compared code identities. The authored exact count remains 250.

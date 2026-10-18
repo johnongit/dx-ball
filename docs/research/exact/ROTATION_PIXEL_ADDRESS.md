@@ -1,5 +1,9 @@
 # Rotation pixel-address evaluation
 
+The latest [word-width correction](WORD_WIDTH_BOUNDARIES.md) sign-extends the
+original source-row delta on the native host. All five complete rotation code
+identities remain unchanged; four controlled signed-pitch cases now pass.
+
 The later [current-context C++ owner](ROTATION_CPP_OWNER.md) promotes horizontal
 offset and width and explicitly demotes y-offset. Its renderer remains1458/1466
 with a new digest and ten changed instructions. The original evidence and scope

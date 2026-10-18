@@ -1,5 +1,10 @@
 # Exact projection and text traversal restoration
 
+The latest [word-width correction](WORD_WIDTH_BOUNDARIES.md) restores modular
+text measurement while preserving all seven complete UI code identities.
+Five focused measurement cases pass; the complete 279-byte body still differs
+in three outer-comparison positions.
+
 Current membership after [rotation traversal](ROTATION_PIXEL_TRAVERSAL.md):
 Y-offset at0x402DE0 is complete191-byte exact again; height at0x402FB0 is a
 193/191-byte candidate with158 differences. Both source bodies are unchanged.

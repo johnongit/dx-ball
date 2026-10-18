@@ -17,6 +17,11 @@ nine exact functions and corrects three source bodies. All twelve units are
 compared whole; triangle and clipped producer changes update their results below.
 Ten focused original/native boundary cases pass; no exact count increases.
 
+The later [rotation/text word-width corrections](WORD_WIDTH_BOUNDARIES.md)
+preserve all twelve complete UI/rotation code identities and ten prior exacts.
+Four signed-pitch rotation and five text-width cases pass without changing
+the two candidate results below.
+
 These 80 are all currently source-present nonexact entries. The eight allocator
 functions now have complete exact comparisons, closing the three previous
 report gaps. Another 78 of the 553 independent inventory entries lack a
@@ -246,7 +251,7 @@ frames do not by themselves justify changing any of these function bodies.
 | Function | Address | Original bytes | Current bytes | Differing positions | Next evidence needed |
 | --- | --- | ---: | ---: | ---: | --- |
 | `elapsed` | `0x004034F0` | 81 | 81 | 3 | Original unsigned comparison/declaration context |
-| `measure-text` | `0x00404FD0` | 279 | 279 | 3 | Original outer-loop comparison context |
+| `measure-text` | `0x00404FD0` | 279 | 279 | 3 | Outer-loop comparison context; modular width arithmetic restored |
 | `animate-palette` | `0x0040A970` | 234 | 234 | 3 | Original remaining signed-guard producer |
 | `present-regions-now` | `0x00409100` | 984 | 984 | 6 | Left/right/bottom index-load scheduling context |
 | `wait-frames` | `0x00409610` | 170 | 170 | 8 | Original clock/comparison declaration context; all four frame homes already match |
@@ -264,7 +269,7 @@ frames do not by themselves justify changing any of these function bodies.
 | `draw-high-scores` | `0x00406B20` | 404 | 403 | 330 | Original shortened comparison producer |
 | `load-pcx` | `0x00409BB0` | 862 | 979 | 851 | Frame/workspace declaration supported by real consumers |
 | `last-brick` | `0x00415F40` | 1057 | 1061 | 992 | Time-value preservation and frame context, retaining time-before-RNG |
-| `render-rotated-sprite` | `0x004026A0` | 1572 | 1458 | 1466 | Real workspace/edge declarations and the frame-size difference |
+| `render-rotated-sprite` | `0x004026A0` | 1572 | 1458 | 1466 | Workspace/frame declarations; signed source-row displacement restored |
 
 ## Runtime candidates
 
