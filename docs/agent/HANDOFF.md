@@ -18,8 +18,9 @@ receipts remain authoritative within their stated scopes. Historical totals
 are not current totals.
 
 The user resumed reconstruction on October 18. The latest bounded checkpoint
-completes the interrupted DirectSound dispatch queries and joins49 original
-COM sites to existing typed source, without changing game source.
+completes the interrupted DirectSound queries and the DirectDraw follow-up:
+all177 register-relative sites now have native source-method/slot associations
+and reconstructed argument frames, without changing game source.
 Continue authored recovery; no campaign is pending.
 
 ## Current authorities
@@ -98,6 +99,29 @@ Relevant accepted source contracts:
 
 ## Last closed work
 
+The [DirectDraw follow-up](../research/exact/DRAW_COM_DISPATCH.md) adds128 native
+site associations across62 functions. All receiver/this expressions agree;
+126 simple frames and two explicitly proved nested sine/x87 frames account
+for558 argument positions. Combined with sound:177 distinct sites,74 functions
+and659 argument positions. Count/order/slot and frame correspondence does not
+prove whole nonexact bodies or all source argument values. Concrete live COM
+targets, validity/lifetime/alias claims and the final authored denominator stay
+open. 51 call-bearing draw functions are accepted exacts and11 remain candidates.
+
+The two focused callee dossiers establish sine402400's130-byte normal-return
+frame and ftol41678C's39-byte x87/EDX:EAX frame, with plainRET in both. The
+existing approved CRT catalog entry gains machine-interface/extent evidence;
+its source/status/counts stay unchanged. The cumulative native snapshot now
+has80 Evidence records. Reuse `.analysis/rea/draw-dispatch-20261018/` and
+`.analysis/rea/draw-nested-call-20261018/`; no compiler or game runs. The
+closed draw archive has145 member-hash-verified files;69 redundant aliases
+are removed after verification, releasing10,051,584 allocated bytes. Current
+snapshot and immutable responses remain. Tracking validates553 candidates,
+475 source-present entries and395 exact functions. The
+[20-candidate table](../research/exact/REMAINING_EXACT_FUNCTIONS.md#authored-candidates)
+now pairs every unchanged full comparison with its next unresolved evidence
+question. Equivalent spelling and declaration sweeps remain closed.
+
 The [DirectSound dispatch review](../research/exact/SOUND_COM_DISPATCH.md)
 closes the failed native batch under the larger REA memory budget. Fifteen
 queries succeed; the session reuses the initialization dossier and closes with
@@ -107,13 +131,15 @@ instruction occurrences and101 argument pushes checked. The actual factory
 thunk416606 targets IAT441234; the helper's observed caller forwards the live
 record's buffer output at offset zero. Three global-xref lists retain their
 exact-address scope. Concrete live method destinations and alias/lifetime
-claims remain open;128 DirectDraw source sites still need correspondence.
+claims remain open. The later draw review above supplies the other128 sites
+under its own correspondence scope.
 
 The unchanged sound compile compares17 complete functions/4,756 exact bytes,
 235 actual bindings and12 full literal references. Reuse
 `build/reports/sound-dispatch-20261018.json`, the current sound object and the
-native16-record `.analysis/rea/dxball.snapshot.json`; do not recompile unchanged
-inputs. Private `.analysis/rea/sound-dispatch-resumed-20261018/` retains the
+sealed16-record sound snapshot; the current `.analysis/rea/dxball.snapshot.json`
+now has80 records. Do not recompile unchanged inputs. Private
+`.analysis/rea/sound-dispatch-resumed-20261018/` retains the
 native join and resource receipt. No source, match count or game acceptance
 changes. The completed sound archive has140 member-hash-verified files and29
 unchanged protected inputs;20 redundant aliases are removed after verification,

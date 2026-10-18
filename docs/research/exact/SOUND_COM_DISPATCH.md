@@ -97,5 +97,7 @@ tested products, the snapshot and immutable run records remain available.
 These observations establish static COM roles and source correspondence.
 Concrete live implementation addresses, object validity, call success, lifetime,
 all-writers/no-alias claims and the final authored-function denominator remain
-open. The other 128 source COM sites belong to DirectDraw families and remain
-outside this correspondence proof. No game probe or full campaign follows.
+open. The later [DirectDraw correspondence](DRAW_COM_DISPATCH.md) maps the
+other128 sites under its own method-slot and argument-frame scope. The sound
+proof's stronger complete-object authority remains separate. No game probe or
+full campaign follows.

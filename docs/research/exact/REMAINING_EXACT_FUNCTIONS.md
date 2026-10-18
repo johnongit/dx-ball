@@ -1,6 +1,6 @@
 # Remaining exact functions
 
-Updated October 18, 2026, after the resumed DirectSound dispatch review.
+Updated October 18, 2026, after the resumed COM dispatch reviews.
 Accepted totals are **395 functions / 85,106 code bytes / 244 metadata bytes**.
 There are **80 complete nonexact comparisons: 20 authored and 60 runtime**. None is an accepted exact.
 
@@ -8,6 +8,9 @@ The [resumed DirectSound review](SOUND_COM_DISPATCH.md) completes the interrupte
 native queries and joins all49 sound COM sites to existing source and exact
 whole-function proofs. The17 sound bodies remain exact across4,756 bytes;
 the20 authored candidates and their comparison results below are unchanged.
+The [DirectDraw follow-up](DRAW_COM_DISPATCH.md) also joins128 sites and their
+argument frames, covering all177 register-relative calls from the earlier
+prefix audit. It does not promote any of the eleven call-bearing candidates.
 
 These 80 are all currently source-present nonexact entries. The eight allocator
 functions now have complete exact comparisons, closing the three previous
@@ -224,28 +227,32 @@ restores all19 frame accesses to their original homes and improves416→405.
 One owner compile preserves five exact companions and six other body identities;
 108 existing cases pass. Independent ownership subsequently restores that receiver and the full1,315-byte function is exact.
 
-| Function | Address | Original bytes | Current bytes | Differing positions |
-| --- | --- | ---: | ---: | ---: |
-| `elapsed` | `0x004034F0` | 81 | 81 | 3 |
-| `measure-text` | `0x00404FD0` | 279 | 279 | 3 |
-| `animate-palette` | `0x0040A970` | 234 | 234 | 3 |
-| `present-regions-now` | `0x00409100` | 984 | 984 | 6 |
-| `wait-frames` | `0x00409610` | 170 | 170 | 8 |
-| `draw-line` | `0x00403070` | 445 | 445 | 9 |
-| `reset-round` | `0x00415C40` | 426 | 426 | 20 |
-| `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 |
-| `draw-paddle` | `0x00412EC0` | 677 | 677 | 68 |
-| `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 88 |
-| `draw-sprite` | `0x00404180` | 105 | 107 | 94 |
-| `find-hit-region` | `0x00401F90` | 173 | 172 | 132 |
-| `blt-sprite` | `0x004040B0` | 195 | 199 | 173 |
-| `fill-polygon` | `0x0040B550` | 1543 | 1543 | 216 |
-| `fill-polygon-clipped` | `0x0040BB60` | 1592 | 1592 | 213 |
-| `release-sprite` | `0x00404BE0` | 262 | 269 | 245 |
-| `draw-high-scores` | `0x00406B20` | 404 | 403 | 330 |
-| `load-pcx` | `0x00409BB0` | 862 | 979 | 851 |
-| `last-brick` | `0x00415F40` | 1057 | 1061 | 992 |
-| `render-rotated-sprite` | `0x004026A0` | 1572 | 1458 | 1466 |
+The next-evidence column identifies the unresolved producer/declaration question,
+not a new source trial. Reuse the closed controls linked above; the new COM
+frames do not by themselves justify changing any of these function bodies.
+
+| Function | Address | Original bytes | Current bytes | Differing positions | Next evidence needed |
+| --- | --- | ---: | ---: | ---: | --- |
+| `elapsed` | `0x004034F0` | 81 | 81 | 3 | Original unsigned comparison/declaration context |
+| `measure-text` | `0x00404FD0` | 279 | 279 | 3 | Original outer-loop comparison context |
+| `animate-palette` | `0x0040A970` | 234 | 234 | 3 | Original remaining signed-guard producer |
+| `present-regions-now` | `0x00409100` | 984 | 984 | 6 | Left/right/bottom index-load scheduling context |
+| `wait-frames` | `0x00409610` | 170 | 170 | 8 | Remaining clock/comparison and local-home producers |
+| `draw-line` | `0x00403070` | 445 | 445 | 9 | Comparison rank/context preserving the proven frame homes |
+| `reset-round` | `0x00415C40` | 426 | 426 | 20 | Remaining global-address and local-home producers |
+| `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 | Remaining local-home and address-producer ownership |
+| `draw-paddle` | `0x00412EC0` | 677 | 677 | 68 | Original sampled-width/local-home ownership |
+| `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 88 | Real edge/workspace declarations retaining proven EH states |
+| `draw-sprite` | `0x00404180` | 105 | 107 | 94 | Original wrapper interface/address producers |
+| `find-hit-region` | `0x00401F90` | 173 | 172 | 132 | Original signed-comparison producer |
+| `blt-sprite` | `0x004040B0` | 195 | 199 | 173 | Original wrapper interface/address producers |
+| `fill-polygon` | `0x0040B550` | 1543 | 1543 | 216 | Workspace/edge declarations and lifetime scheduling |
+| `fill-polygon-clipped` | `0x0040BB60` | 1592 | 1592 | 213 | Workspace/edge declarations and clipping producers |
+| `release-sprite` | `0x00404BE0` | 262 | 269 | 245 | Original surface-receiver/field/address context |
+| `draw-high-scores` | `0x00406B20` | 404 | 403 | 330 | Original shortened comparison producer |
+| `load-pcx` | `0x00409BB0` | 862 | 979 | 851 | Frame/workspace declaration supported by real consumers |
+| `last-brick` | `0x00415F40` | 1057 | 1061 | 992 | Time-value preservation and frame context, retaining time-before-RNG |
+| `render-rotated-sprite` | `0x004026A0` | 1572 | 1458 | 1466 | Real workspace/edge declarations and the frame-size difference |
 
 ## Runtime candidates
 
