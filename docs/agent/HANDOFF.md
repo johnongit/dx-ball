@@ -18,7 +18,8 @@ receipts remain authoritative within their stated scopes. Historical totals
 are not current totals.
 
 The user resumed reconstruction on October 18. The latest bounded checkpoint
-below verifies a last-brick transition boundary without changing game source.
+completes the interrupted DirectSound dispatch queries and joins49 original
+COM sites to existing typed source, without changing game source.
 Continue authored recovery; no campaign is pending.
 
 ## Current authorities
@@ -96,6 +97,29 @@ Relevant accepted source contracts:
   C linkage, real Win32 heap/raster defaults, and stdio-before-onexit ordering.
 
 ## Last closed work
+
+The [DirectSound dispatch review](../research/exact/SOUND_COM_DISPATCH.md)
+closes the failed native batch under the larger REA memory budget. Fifteen
+queries succeed; the session reuses the initialization dossier and closes with
+16 cumulative Evidence records. All49 sound register-relative calls have
+original-site/source/slot/receiver/argument correspondence, with445 setup
+instruction occurrences and101 argument pushes checked. The actual factory
+thunk416606 targets IAT441234; the helper's observed caller forwards the live
+record's buffer output at offset zero. Three global-xref lists retain their
+exact-address scope. Concrete live method destinations and alias/lifetime
+claims remain open;128 DirectDraw source sites still need correspondence.
+
+The unchanged sound compile compares17 complete functions/4,756 exact bytes,
+235 actual bindings and12 full literal references. Reuse
+`build/reports/sound-dispatch-20261018.json`, the current sound object and the
+native16-record `.analysis/rea/dxball.snapshot.json`; do not recompile unchanged
+inputs. Private `.analysis/rea/sound-dispatch-resumed-20261018/` retains the
+native join and resource receipt. No source, match count or game acceptance
+changes. The completed sound archive has140 member-hash-verified files and29
+unchanged protected inputs;20 redundant aliases are removed after verification,
+releasing10,264,576 allocated bytes. Current products, snapshot and immutable
+run records remain. The progress generator now explicitly reports270 authored source
+entries/250 exact/20 awaiting exact matches, with the denominator provisional.
 
 The [last-brick transition review](../research/exact/LAST_BRICK_TRANSITION_BOUNDARY.md)
 confirms that a level-skip bonus replaces the board before the last-brick gate,

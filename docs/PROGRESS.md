@@ -1,10 +1,14 @@
 # Reconstruction progress
 
-Recover the original game source into a rebuildable, playable game.
+Recover the authored functions as faithfully and exactly as possible first.
+Then rebuild with the original Visual C++ 4.0 compiler and validate the full game behavior.
 The current records cover gameplay, all five screen modes, resources, graphics and audio.
 
 | Fact | Count |
 | --- | ---: |
+| Classified authored functions with source | 270 |
+| Classified authored byte-exact functions | 250 |
+| Classified authored functions awaiting exact matches | 20 |
 | Provisional function candidates | 553 |
 | Parent-owned compiler fragments, counted separately | 24 |
 | Source-present functions | 475 |
@@ -16,10 +20,11 @@ The current records cover gameplay, all five screen modes, resources, graphics a
 | Origin still unclassified | 1 |
 
 The inventory includes game routines, runtime dependencies and compiler-generated code.
-Both Windows builds have completed recorded original-board campaigns under Wine.
-Continue with the remaining rendering and runtime routines.
+The authored inventory remains provisional. Historical Wine campaigns provide bounded
+observations; full behavior of the restored VC4 game remains unverified.
 
+Continue with the [remaining authored matches](research/exact/REMAINING_EXACT_FUNCTIONS.md#authored-candidates).
 See [the architecture](ARCHITECTURE.md), [compiler matching](MATCHING.md),
-and [recorded play runs](research/ORIGINAL_CAMPAIGN.md).
+and [historical play observations](research/ORIGINAL_CAMPAIGN.md).
 
 Generated from the ledgers by `scripts/repo-python scripts/progress.py`.

@@ -1,5 +1,11 @@
 # CRT suffix byte ownership and continuation extent
 
+The later [DirectSound dispatch correspondence](SOUND_COM_DISPATCH.md) maps
+49 of the177 prefix register-relative calls to existing typed COM operations.
+It adds native site and factory/output evidence without establishing concrete
+runtime method destinations; the128 DirectDraw source sites remain unjoined.
+Historical counts and the direct-flow audit below retain their original scopes.
+
 The declared original `.text` suffix `0x416610..0x41FEEB` contains 39,132 bytes.
 A bounded review compares its gaps against the independent function inventory,
 the separate parent-owned fragments and existing complete CRT section proofs.

@@ -1,8 +1,13 @@
 # Remaining exact functions
 
-Updated October 18, 2026, after the resumed last-brick transition review.
+Updated October 18, 2026, after the resumed DirectSound dispatch review.
 Accepted totals are **395 functions / 85,106 code bytes / 244 metadata bytes**.
 There are **80 complete nonexact comparisons: 20 authored and 60 runtime**. None is an accepted exact.
+
+The [resumed DirectSound review](SOUND_COM_DISPATCH.md) completes the interrupted
+native queries and joins all49 sound COM sites to existing source and exact
+whole-function proofs. The17 sound bodies remain exact across4,756 bytes;
+the20 authored candidates and their comparison results below are unchanged.
 
 These 80 are all currently source-present nonexact entries. The eight allocator
 functions now have complete exact comparisons, closing the three previous

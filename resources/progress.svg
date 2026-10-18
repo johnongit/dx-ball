@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-labelledby="title desc">
 <title id="title">DX-Ball reconstruction progress</title>
-<desc id="desc">475 source-present functions, 395 exact functions, out of 553 provisional candidates.</desc>
+<desc id="desc">475 source-present functions, 395 exact functions, out of 553 provisional candidates. Currently classified authored functions: 270 source-present, 250 exact, 20 awaiting exact matches.</desc>
 <rect width="900" height="460" rx="20" fill="#101722"/>
 <g font-family="sans-serif">
 <text x="34" y="46" fill="#eef4ff" font-size="25" font-weight="bold">DX-BALL  /  RECONSTRUCTION</text>
@@ -561,5 +561,6 @@
 <rect x="609" y="356" width="22" height="10" rx="2" fill="#f5bd57"/>
 <rect x="634" y="356" width="22" height="10" rx="2" fill="#29384c"/>
 <text x="34" y="388" fill="#9baec8" font-size="13">Green: exact compiler match · Amber: reconstructed source · Dark: remaining candidates</text>
-<text x="34" y="412" fill="#9baec8" font-size="13">Goal: recover the game source, rebuild it, and play.</text>
+<text x="34" y="412" fill="#9baec8" font-size="13">Priority: recover authored functions, then verify full behavior of the VC4 build.</text>
+<text x="34" y="436" fill="#9baec8" font-size="13">Classified authored: 270 source-present · 250 exact · 20 awaiting exact matches</text>
 </g></svg>

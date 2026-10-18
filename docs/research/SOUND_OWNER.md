@@ -1,5 +1,11 @@
 # DirectSound controller and WAV loading
 
+The [resumed COM dispatch audit](exact/SOUND_COM_DISPATCH.md) maps all49 sound
+register-relative calls to typed source operations, with native REA sites,
+receiver/argument setup and the real factory/output chain. The unchanged
+17-function owner compares exactly across4,756 bytes; no new exact is counted.
+Historical batches below retain their original counts and scopes.
+
 The [current digital-audio observation](CURRENT_DIGITAL_AUDIO.md) records
 nonzero stereo PCM from the current VC4 game's own PulseAudio sink input.
 It adds actual host-backend delivery evidence while retaining physical audio,
