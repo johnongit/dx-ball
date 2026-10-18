@@ -164,3 +164,18 @@ query-response gzip carriers. A separate `-erratum/` corrects its step wording:
 the second branch includes zero (`dx >= 0`), verified by original CMP/JGE bytes
 at40BAB3/40BAB7 and40C0F4/40C0F8. Queries and their bounded negative remain
 unchanged. No source model, compilation or provider query follows.
+
+## Additional bounded source comparison, October 18
+
+Sixteen further indexed queries use the two Shell sorts, `memmove`, integer
+edge carries and published polygon-function spellings. Their returned results
+provide no connected declaration. Reconstruction mirrors are excluded.
+One primary [Michael Abrash June1991 listing](https://jacobfilipp.com/DrDobbs/articles/DDJ/1991/9106/9106n/9106n.htm)
+is examined:it allocates one edge pool, keeps linked global/active edge tables
+and bubble-sorts active edges. Its edge has nine fields, including a link.
+That differs from the game's three allocations, two Shell sorts and28-byte
+edge. This listing does not justify naming the unread word at+12 or changing
+the game's workspace. This is a bounded exclusion, not proof of source absence.
+Private `.analysis/polygon-source-continuation-20261018/` retains all query
+responses and the article view. No source model or compiler trial follows this
+search; polygon comparisons remain1543/216 and1592/213.

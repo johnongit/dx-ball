@@ -119,3 +119,55 @@ their original repository-relative paths. Net released allocation is8,146,944
 bytes (about7.77 MiB), after archive/receipt costs and inode-link accounting.
 Current matching/delivery objects, tested products, direct runtime traces and
 valid Native/MinGW CMake configurations remain retained.
+
+## Fixed address-order resource control, October 18
+
+One subsequent hypothesis orders all18 unchanged resource definitions by their
+original entry addresses. Entry adjacency supports this bounded inference;
+it does not prove the original translation-unit boundary or definition order.
+Connected Mac names supply no independent ordering evidence. The reviewed
+control history contains no earlier test of this complete fixed sequence. The
+existing bank-release
+header moves with its definition to preserve C linkage; the private PCX type,
+size assertion and warning pragmas move with the decoder. Their contents,
+common headers, globals, function bodies and compiler flags remain unchanged.
+The moved header changes declaration encounter position too; this tests the
+complete organization, rather than isolating body order as each delta's cause.
+
+This fresh checkout lacked the canonical resource object. One baseline compile
+first reproduces all18 complete comparisons:13 exacts/3,050 bytes and the five
+maintained candidates. One proposal compile then gives12 exacts/2,895 bytes:
+
+| Function | Original address | Current bytes / differences | Proposal bytes / differences |
+| --- | --- | ---: | ---: |
+| Draw sprite | `0x404180` |107 /94|105 /0|
+| Blt sprite | `0x4040B0` |199 /173|195 /0|
+| Release sprite | `0x404BE0` |269 /245|262 /0|
+| Draw keyed sprite | `0x404040` |105 /0|107 /94|
+| Stretch keyed sprite | `0x4041F0` |139 /0|141 /92|
+| Find glyph | `0x404E40` |145 /0|146 /86|
+| Draw glyph | `0x404CF0` |328 /0|332 /258|
+| Load sprite bank | `0x404610` |1475 /64|1486 /943|
+| Load PCX | `0x409BB0` |979 /851|979 /851|
+
+Reject the entire proposal:three gains lose four prior exacts. Nine complete
+relocated code identities stay unchanged; PCX retains its comparison counts
+but changes its relocated identity. Both compilations check262 actual bindings
+and six complete literal references. External bindings follow unchanged actual
+symbol/type/addend identities. Renumbered compiler literals retain their original
+targets through the same consuming function and complete payload, rather than
+relocation position. Exact sections also pass the existing local-target guard.
+
+All13 sealed inputs/authorities regain their bytes, modes and nanosecond mtimes.
+The canonical baseline object remains current; no proposal is adopted. Keep250
+authored exacts/20 candidates and395 overall exacts. Do not follow this result
+with subset, position or include-placement variants. No provider query, game,
+native build, relink or full replay follows. The two compiles and comparisons
+take8.238 seconds on CPU0/35%, peak at163,422,208 bytes within384/512 MiB, and
+record no high/max/OOM events. Private
+`.analysis/resource-address-order-20261018/` retains full mappings, comparisons,
+compiler/input identities, resource receipt and source restoration evidence.
+Independent review reruns both complete comparisons, checks every actual
+binding and literal, and verifies source/input restoration. The closed archive
+is member-size/hash verified before removing both disposable source copies,
+the proposal object and its compiler log. The current baseline is retained.

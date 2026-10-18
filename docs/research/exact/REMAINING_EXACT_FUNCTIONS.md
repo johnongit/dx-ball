@@ -338,6 +338,11 @@ Read the relevant note before selecting another source model:
   game-owner layout, SDK, declaration, rotation and workspace controls.
   Preserve accepted companions; do not sweep equivalent spellings or invent
   buffer capacity/padding to explain a frame gap.
+- [Resource address ordering](RESOURCE_ROTATION_WRAPPER_OWNER.md#fixed-address-order-resource-control-october-18)
+  tests all18 unchanged definitions in one original-address sequence. Three
+  private gains lose four exact companions; the whole model is rejected.
+  Current full comparisons remain unchanged. Do not select a favorable subset
+  or follow with definition/include-position variants.
 - [Float rendering](RUNTIME_FLOAT_RENDER.md) records the completed private
   original `cvt.c` owner control: exponent formatting becomes exact, but fixed
   and general lose their accepted results. Not adopted; maintained values above

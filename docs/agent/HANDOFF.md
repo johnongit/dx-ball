@@ -17,11 +17,13 @@ retains the preceding adoption and cleanup chronology. Owner notes and private
 receipts remain authoritative within their stated scopes. Historical totals
 are not current totals.
 
-The user resumed reconstruction on October 18. The latest bounded checkpoint
+The user resumed reconstruction on October 18. The native checkpoint
 completes the interrupted DirectSound queries and the DirectDraw follow-up:
 all177 register-relative sites now have native source-method/slot associations
 and reconstructed argument frames, without changing game source.
-Continue authored recovery; no campaign is pending.
+The subsequent complete resource address-order control is rejected:three
+private gains lose four prior exacts. Continue authored recovery; no campaign
+is pending.
 
 ## Current authorities
 
@@ -51,6 +53,7 @@ are separate claims, not interchangeable completion percentages.
 | `config/source-owners.toml`, `match-units.toml` | Source ownership; full compiler recipes, extents and bindings |
 | `build/reports/exact-replay.json` | Last global 395 accepted comparisons and producers; historical private receipt |
 | `build/reports/last-brick-family-20261018.json` | New local 69-unit check: 62 exacts and seven unchanged candidates |
+| `build/reports/resource-family-20261018.json` | Local canonical 18-unit baseline: 13 exacts and five unchanged candidates; address-order proposal rejected |
 | `.analysis/exact-candidate-audit-20261012/comparison.json` | Current 80 complete candidates; directory date is historical |
 | [Remaining-functions table](../research/exact/REMAINING_EXACT_FUNCTIONS.md) | All candidate results and owner-note links |
 | `.analysis/raster-muldiv-integration-20261018/authored-coverage.json` | Current authored source/comparison/closure coverage |
@@ -98,6 +101,20 @@ Relevant accepted source contracts:
   C linkage, real Win32 heap/raster defaults, and stdio-before-onexit ordering.
 
 ## Last closed work
+
+The [fixed resource address-order control](../research/exact/RESOURCE_ROTATION_WRAPPER_OWNER.md#fixed-address-order-resource-control-october-18)
+first recreates the locally absent canonical object:18 complete functions,
+13 exacts/3,050 bytes,262 bindings and six full literal references. One fixed
+definition-order proposal then restores draw/blt/release sprite but loses keyed
+draw/stretch and glyph find/draw, giving12 exacts/2,895 bytes. Reject it whole;
+all13 sealed inputs/authorities restore and the canonical baseline object stays
+current. No subset or further position/header variants are queued. Source,
+ledgers, delivery identity and250 authored exact/20 candidates stay unchanged.
+The private `.analysis/resource-address-order-20261018/` contains both complete
+comparisons and explicit actual-symbol/literal mappings. The related
+[polygon source check](../research/exact/POLYGON_SCAN_WORKSPACE.md#additional-bounded-source-comparison-october-18)
+excludes one primary Abrash implementation after16 bounded search queries;
+it establishes no new declaration. Reuse these closed results.
 
 The [DirectDraw follow-up](../research/exact/DRAW_COM_DISPATCH.md) adds128 native
 site associations across62 functions. All receiver/this expressions agree;
@@ -170,18 +187,19 @@ remain historical authorities, not locally present products. Pinned Node 22.19.0
 is now in `.tools/node-22.19.0/bin`; a private Ubuntu Wine 9 compiler runtime is in
 `.tools/wine9-private/bin`. Prepend the relevant directory to PATH inside the
 required systemd scope. The original VC4 compiler/linker banners verify. Wine
-gameplay/audio support is untested. The new REA session completes all ten
-individual responses but exhausts Node heap during closing snapshot serialization;
-no snapshot is produced. Its scope exits, full responses are archived and
-member-hash verified, and no successful query is repeated.
+gameplay/audio support is untested. The initial REA session completed all ten
+individual responses but exhausted Node heap during closing snapshot serialization;
+no snapshot was produced. Its scope exited, full responses were archived and
+member-hash verified. The later approved memory-budget and native checkpoints
+above supersede that failure; the current80-record snapshot is retained.
 
 An independent source-only inventory under
 `.analysis/com-call-inventory-20261018/` identifies 177 COM call sites across 74
-catalogued functions: 128 DirectDraw-family and 49 DirectSound-family. This matches
-the unresolved indirect-call count numerically; original instruction-site
-correspondence is still unproved. A bounded next query is the sound-buffer
-factory at 4063A0, its load-sound caller 405A7B and device producer 405158/cell 421098.
-Do not infer a final authored denominator from the source-site count.
+catalogued functions: 128 DirectDraw-family and 49 DirectSound-family. The later
+native reviews above establish site/slot/frame correspondence for all177 and
+close the factory/caller/device query. Concrete live destinations and lifetime
+claims remain open. Do not repeat those queries or infer a final authored
+denominator from the source-site count.
 
 The [bank filename and path review](../research/exact/MAC_CANDIDATE_FLOW_CONNECTIONS.md#bank-filename-qualification-and-path-boundary)
 reads one previously missing416-byte Mac helper through REA6.5 process capture
