@@ -1,6 +1,6 @@
 # Remaining exact functions
 
-Updated October 18, 2026, after the resumed COM reviews and raster arithmetic correction.
+Updated October 19, 2026, after genuine Kernel32 clock integration.
 Accepted totals are **395 functions / 85,106 code bytes / 244 metadata bytes**.
 There are **80 complete nonexact comparisons: 20 authored and 60 runtime**. None is an accepted exact.
 
@@ -21,6 +21,15 @@ The later [rotation/text word-width corrections](WORD_WIDTH_BOUNDARIES.md)
 preserve all twelve complete UI/rotation code identities and ten prior exacts.
 Four signed-pitch rotation and five text-width cases pass without changing
 the two candidate results below.
+
+The [genuine Kernel32 clock integration](KERNEL_CLOCK_IMPORT.md) preserves all
+13 runtime exacts while replacing synthetic callback references with actual
+imports. Six original/native clock and six native transport cases pass.
+Elapsed and reset retain their whole-function identities. The unchanged paddle
+body changes from 677/68 to 679/496 in the new declaration context; the table
+records that regression explicitly. No source/exact count increases or game
+execution is claimed. Current runtime authority:
+`.analysis/kernel-clock-import-20261019/comparison.json`.
 
 These 80 are all currently source-present nonexact entries. The eight allocator
 functions now have complete exact comparisons, closing the three previous
@@ -164,11 +173,12 @@ among its49 named main paths, and its actual game PE has no symbols or debug
 directory. These are bounded findings, not proof of source absence or optimality;
 no further declaration or compiler-setting trial follows from them.
 
-The current receipt audit verifies source/object/flag identities for all270
-classified authored entries across30 matching recipes:250 exact and20 complete
-candidates. It reuses existing comparisons without replaying; it does not prove
-source optimality, semantic equivalence or a final authored denominator.
-Authority: `.analysis/raster-muldiv-integration-20261018/authored-coverage.json`.
+The October19 receipt review reconciles all20 public candidate rows with the
+retained owner reports and the current270 authored ledger entries across30
+matching recipes:250 exact and20 complete candidates. It reuses comparisons
+without replaying unrelated units; it does not prove source optimality,
+semantic equivalence or a final authored denominator. Current authority:
+`.analysis/kernel-clock-import-20261019/authored-table-review.json`.
 The [fixed palette declaration inference](AUTHOR_SOURCE_CONTEXT.md#fixed-author-palette-declaration-model)
 uses actual connected `r/g/b/mode` roles in both rotations. Right rotation is
 now complete 234/0 exact, while animate-palette improves from nine differences
@@ -258,7 +268,7 @@ frames do not by themselves justify changing any of these function bodies.
 | `draw-line` | `0x00403070` | 445 | 445 | 9 | Comparison rank/context preserving the proven frame homes |
 | `reset-round` | `0x00415C40` | 426 | 426 | 20 | Remaining global-address and local-home producers |
 | `load-sprite-bank` | `0x00404610` | 1475 | 1475 | 64 | Remaining local-home and address-producer ownership |
-| `draw-paddle` | `0x00412EC0` | 677 | 677 | 68 | Original sampled-width/local-home ownership |
+| `draw-paddle` | `0x00412EC0` | 677 | 679 | 496 | Original sampled-width/local-home and bank-address producers; actual clock imports retained |
 | `fill-triangle` | `0x0040AB90` | 1710 | 1710 | 97 | Real edge/workspace declarations retaining proven EH states |
 | `draw-sprite` | `0x00404180` | 105 | 107 | 94 | Original wrapper interface/address producers |
 | `find-hit-region` | `0x00401F90` | 173 | 172 | 132 | Original signed-comparison producer |

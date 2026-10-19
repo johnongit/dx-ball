@@ -2,6 +2,9 @@
    live callbacks with the same argument/result contracts. */
 #include "platform.h"
 #include "clock_api.h"
+#if !defined(_WIN32)
+#include "clock_imports.h"
+#endif
 #include <stdlib.h>
 
 DxBallDrawFactory dxball_draw_factory_backend;
@@ -31,6 +34,18 @@ DxBallUInt DXBALL_DDCALL timeGetTime(void)
 
 DxBallInt (DXBALL_DDCALL *dxball_query_performance_frequency)(DxBallCounter *) = clock_frequency;
 DxBallInt (DXBALL_DDCALL *dxball_query_performance_counter)(DxBallCounter *) = clock_counter;
+
+#if !defined(_WIN32)
+DxBallInt DXBALL_DDCALL QueryPerformanceFrequency(DxBallClockSample *sample)
+{
+    return dxball_query_performance_frequency(sample);
+}
+
+DxBallInt DXBALL_DDCALL QueryPerformanceCounter(DxBallClockSample *sample)
+{
+    return dxball_query_performance_counter(sample);
+}
+#endif
 
 DxBallInt DXBALL_DDCALL dxball_direct_draw_create(void *guid,
     DxBallDDraw **device, void *outer)

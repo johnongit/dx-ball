@@ -36,3 +36,8 @@ preserved. Counts above do not increase; twenty authored functions remain nonexa
 Further October 18 recovery: [rotation displacement and text-width corrections](research/exact/WORD_WIDTH_BOUNDARIES.md)
 pass nine original/native boundary cases while preserving ten exact functions
 and all twelve compared code identities. The authored exact count remains 250.
+
+October 19: [genuine Kernel32 clock imports](research/exact/KERNEL_CLOCK_IMPORT.md)
+restore the Windows boundary and native sample ownership. All 13 affected exacts
+survive and 12 focused clock/transport cases pass. No function-count gain is
+claimed; the paddle candidate changes from 677 bytes/68 differences to 679/496.

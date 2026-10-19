@@ -1,5 +1,9 @@
 # Exact reconstruction notes
 
+The [genuine Kernel32 clock integration](KERNEL_CLOCK_IMPORT.md) restores the
+actual Windows import boundary and same-object native transport. Thirteen exact
+companions survive; the paddle candidate's compiler regression is explicit.
+
 The latest [window switch exits](EXACT_WINDOW_SWITCH_EXITS.md) add the complete
 1,171-byte WindowProc. Totals are 188 exact functions / 35,003 complete span
 bytes / 136 accepted metadata bytes, with 2,138 selected existing window cases.

@@ -17,6 +17,7 @@ extern "C" {
 #include "clock_api.h"
 }
 
+#include "clock_imports.h"
 #include <stdlib.h>
 #include <string.h>
 
@@ -46,20 +47,20 @@ DxBallDDSurface *dxball_primary_surface, *dxball_secondary_surface;
 DxBallUInt dxball_current_time(void)
 {
     DxBallInt result;
-    DxBallCounter value;
+    DxBallClockSample value;
     if (dxball_high_resolution_clock != 0) {
         if (dxball_clock_divisor == 0) {
-            result = dxball_query_performance_frequency(&value);
+            result = QueryPerformanceFrequency(&value);
             if (result == 0) {
                 return timeGetTime();
                 /* The original full span retains this unreachable store. */
                 dxball_clock_divisor = 0;
             } else {
-                dxball_clock_divisor = value.low / 1000;
+                dxball_clock_divisor = DXBALL_CLOCK_LOW_PART(value) / 1000;
             }
         }
-        dxball_query_performance_counter(&value);
-        return value.low / dxball_clock_divisor;
+        QueryPerformanceCounter(&value);
+        return DXBALL_CLOCK_LOW_PART(value) / dxball_clock_divisor;
     } else {
         return timeGetTime();
     }

@@ -1,6 +1,6 @@
 # DX-Ball reconstruction handoff
 
-Updated October 18, 2026. The reconstruction is unfinished. Recover the English
+Updated October 19, 2026. The reconstruction is unfinished. Recover the English
 DX-Ball v1.07 functions as exactly as possible, as readable shared C/C++;
 then verify the original VC4 build and playability; resume ports after that.
 The user permits the **19 explicit original CRT members** in the restored-CRT
@@ -47,6 +47,25 @@ No exact/source count increases or full-game validation is claimed. Reuse
 `.analysis/word-width-recovery-20261018/comparison.json` and the scoped boundary
 proofs; do not repeat historical matrices.
 
+The latest [Kernel32 clock integration](../research/exact/KERNEL_CLOCK_IMPORT.md)
+restores genuine frequency/counter imports and a same-object native transport.
+One runtime compile and saved-object comparison cover all 16 whole functions,
+352 bindings and 57 generated references. All 13 accepted exacts/2,895 bytes
+retain their identities; current-time remains 148/0, elapsed 81/3 and reset
+426/20. The unchanged paddle body now emits 679 bytes/496 differences instead
+of 677/68; this declaration-context regression is retained explicitly, without
+using the old paddle object. Six original/native clock cases and six guarded
+transport cases pass in an O2/UBSan build of the two actual owners. Windows
+current-time now uses real imports and bypasses callback-cell/table overrides;
+native overrides retain pointer identity and live lookup. No exact/source count
+increase, historical matrix rerun, delivery relink or game execution is claimed.
+Reuse `.analysis/kernel-clock-import-20261019/comparison.json` and its scoped
+boundary receipts. REA completes with the approved 1 GiB/2 GiB limits, no OOM.
+The private `closed-evidence.tar.gz` and `archive-receipt.json` preserve and
+member-hash verify the old/new inputs, objects, probes, reviews and REA snapshot
+before disposable copies and native probe products are removed. The canonical
+VC4 runtime object/log, old linked delivery and useful caches remain.
+
 ## Current authorities
 
 | Inventory | Current value |
@@ -78,9 +97,10 @@ are separate claims, not interchangeable completion percentages.
 | `build/reports/resource-family-20261018.json` | Local canonical 18-unit baseline: 13 exacts and five unchanged candidates; address-order proposal rejected |
 | `.analysis/fresh-restored-build-20261018/matching-comparison.json` | Fresh delivery objects: 353 new whole comparisons and 104 reconciled results; 386 exact/71 candidate units |
 | `.analysis/fresh-restored-build-20261018/coverage-review.json` | All 270 authored functions covered; 18 global runtime units excluded from this delivery comparison |
+| `.analysis/kernel-clock-import-20261019/comparison.json` | Current runtime object: 13 exacts and three candidates; supersedes runtime results in the fresh delivery report |
 | `.analysis/exact-candidate-audit-20261012/comparison.json` | Historical 80-candidate base; later owner reports supersede changed results |
 | [Remaining-functions table](../research/exact/REMAINING_EXACT_FUNCTIONS.md) | All candidate results and owner-note links |
-| `.analysis/raster-muldiv-integration-20261018/authored-coverage.json` | Current authored source/comparison/closure coverage |
+| `.analysis/kernel-clock-import-20261019/authored-table-review.json` | Current 270 authored ledger entries/30 closures and all 20 table results reconciled against retained owner reports |
 
 Original `original/DXBALL.EXE`: English v1.07, 158,208 bytes, SHA-256
 `756da1ba09edce716d5bf8770320ca0d5ed4e525672b6bb605b9bdb4b88972ba`.
@@ -106,7 +126,7 @@ VC4 builds,
 7,164 existing raster cases, complete linked containers and 4,488 loader fields
 pass within that checkpoint's scope. That link reused 118 objects and 19 approved
 original CRT members. The fresh rebuild retains that checkpoint's source and
-recipes with its own product identities. The later arithmetic checkpoints compile their changed
+recipes with its own product identities. The later arithmetic and clock checkpoints compile their changed
 owners separately; the EXE above has not been relinked with those source changes.
 
 Relevant accepted source contracts:
@@ -302,7 +322,7 @@ is not a new source question. Keep inference separate from recovered fact.
 | Triangle/polygons | [Fixed-point](../research/exact/EXACT_FIXED_POINT.md), [polygon workspace](../research/exact/POLYGON_SCAN_WORKSPACE.md) | Four root FixedPoint constructions/EH states;28-byte edge has one unknown word at+12. Preserve paired accesses, three pools, both Shellsorts and signed negative-error carry |
 | Rotation | [Pixel-address correspondence](../research/exact/ROTATION_PIXEL_ADDRESS.md) | All365 instructions/22 calls/26 branches accounted. Unknown80-byte frame difference is not permission to add padding; integer-offset-before-base order is restored |
 | Line/ranking/presentation | [Line](../research/exact/LINE_LOCKED_CURSOR.md), [ranking](../research/exact/RANKING_OWNER_FAMILY.md), [presentation](../research/exact/PRESENTATION_MERGE_SCOPE.md) | Known comparison/register producers remain. Fixed line rank model restores directions but loses correct homes; ranking has original homes and one shorter compare producer |
-| Clocks/palette/last brick | [Author context](../research/exact/AUTHOR_SOURCE_CONTEXT.md), [lightning crop chain](../research/exact/EXACT_LIGHTNING_CROP_CHAIN.md) | Clock cache/sampling order accounted; shared unsigned-long context already tested. Keep clock before RNG and existing callback-visible state |
+| Clocks/palette/last brick | [Kernel imports](../research/exact/KERNEL_CLOCK_IMPORT.md), [author context](../research/exact/AUTHOR_SOURCE_CONTEXT.md), [lightning crop chain](../research/exact/EXACT_LIGHTNING_CROP_CHAIN.md) | Clock cache/sampling order accounted; genuine imports retained. Paddle now679/496; two equivalent producers grow one byte each. Keep clock before RNG and existing native callback-visible state |
 
 Resource callback-table extraction and historical DirectDraw header controls
 can produce a private exact release-sprite while losing prior exact companions.

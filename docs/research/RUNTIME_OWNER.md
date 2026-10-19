@@ -1,5 +1,16 @@
 # Game lifecycle and mode dispatch
 
+The October 19 [Kernel32 clock integration](exact/KERNEL_CLOCK_IMPORT.md)
+restores genuine frequency/counter imports and same-object native transport.
+All 16 runtime functions compare whole: 13 exacts retain their 2,895 bytes,
+current-time remains 148/0, elapsed 81/3 and reset 426/20. The unchanged paddle
+body now emits 679 bytes/496 differences, explicitly superseding its previous
+677/68 comparison. Six original/native clock and six guarded transport cases
+pass; no exact count increases, delivery relink or game run is claimed.
+Windows current-time bypasses callback overrides, while native callbacks retain
+their same pointer, live lookup and partial-write semantics. Historical sections
+below retain their own compiler contexts and validation scopes.
+
 The later [direct WinMM import](exact/EXACT_WINMM_CLOCK_IMPORT.md) restores the
 170-byte waiting function exactly and preserves all 26 prior affected exacts.
 Paddle drawing becomes677/677 with 104 differences; last-brick keeps its explicit
